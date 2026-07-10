@@ -1,159 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Seaside Plumbing & Mechanical - About Us
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Inter', sans-serif;
-            background-color: #020617;
-            color: white;
-            scroll-behavior: smooth;
-        }
-        .bg-hero {
-            background-image: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url("/assets/residentialplumber.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-        .dot-pattern {
-            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px);
-            background-size: 20px 20px;
-        }
- </style>
-  </head>
-
-  <body class="text-white">
-    <!-- Navigation -->
-   <nav class="relative z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#020617]">
-  <!-- Logo -->
-  <a href="index.html" class="inline-flex items-center">
-    <img
-      src="/assets/logo.png"
-      alt="Seaside Plumbing & Mechanical logo"
-      class="h-20 md:h-28 w-auto"
-    />
-  </a>
-
-<!-- Desktop Links -->
-  <div class="hidden md:flex space-x-10 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="/">Home</a>
-    <a class="hover:text-orange-400 transition-colors" href="/services">Services</a>
-    <a class="hover:text-orange-400 transition-colors" href="/service-areas">Service Areas</a>
-    <a class="hover:text-orange-400 transition-colors" href="/about">About Us</a>
-    <a class="hover:text-orange-400 transition-colors" href="/photos">Photos</a>
-    <a class="hover:text-orange-400 transition-colors flex items-center" href="/faq">
-      <i class="far fa-question-circle mr-2"></i> FAQs
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="/contact">Contact Us</a>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us — Seaside Plumbing &amp; Mechanical</title>
+  <meta name="description" content="Meet Jonathan & Mackenzie, the husband-and-wife owners of Seaside Plumbing & Mechanical, serving coastal North Carolina with honest, code-compliant work.">
+  <meta property="og:title" content="About Seaside Plumbing & Mechanical">
+  <meta property="og:description" content="A local, family-owned NC plumbing company built on quality workmanship and honest service.">
+  <meta property="og:image" content="https://seasideplumbingco.com/assets/jonathan and kenzie.JPG">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical"></a>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/about" class="active">About</a>
+      <a href="/services">Services</a>
+      <a href="/areas">Areas</a>
+      <a href="/work">Work</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <a href="tel:9107601009" class="btn btn-primary btn-sm header-cta">910 · 760 · 1009</a>
   </div>
-
-  <!-- Mobile Menu Button -->
-  <button id="menuBtn" class="md:hidden text-white text-sm uppercase tracking-widest">
-    Menu
-  </button>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="hidden bg-[#020617] border-t border-gray-800 md:hidden">
-  <div class="flex flex-col px-6 py-4 space-y-4 text-sm uppercase tracking-widest">
-    <a href="/">Home</a>
+  <nav class="mobile-nav">
+    <a href="/>Home</a>
+    <a href="/about" class="active">About</a>
     <a href="/services">Services</a>
-    <a href="/service-areas">Service Areas</a>
-    <a href="/about">About Us</a>
-    <a href="/photos">Photos</a>
-    <a href="/faq">FAQs</a>
-    <a href="/contact">Contact Us</a>
-  </div>
-</div>
+    <a href="/areas">Areas</a>
+    <a href="/work">Work</a>
+    <a href="/faq">FAQ</a>
+    <a href="/contact">Contact</a>
+    <a href="tel:9107601009" class="call-link">Call</a>
+  </nav>
+</header>
 
-
-    <!-- Favicon (works on Chrome, Safari, iOS, desktop) -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- Open Graph / Text Message Preview -->
- <meta property="og:title" content="Seaside Plumbing & Mechanical">
-<meta property="og:description" content="Residential & Commercial Plumbing Services Across Coastal North Carolina">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://seasideplumbingco.com/">
-<meta property="og:image" content="https://seasideplumbingco.com/assets/logo-share.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:type" content="image/png">
-
-  <!-- iMessage / Apple optimization -->
-  <meta name="apple-mobile-web-app-title" content="Seaside Plumbing">
-
-
-<!-- Hero Section -->
- <section class="relative h-[300px] flex items-center justify-center overflow-hidden">
-   <img alt="A professional plumber working on a large-scale commercial pipe system in a modern industrial facility, focusing on complex valve connections" class="absolute inset-0 w-full h-full object-cover opacity-40" height="300" src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=80&w=1920" width="1920"/>
-   <div class="absolute inset-0 bg-black/40">
-   </div>
-   <h1 class="relative text-4xl font-bold z-10">
-    About Seaside Plumbing & Mechanical
-   </h1>
+<main>
+  <section class="about-hero">
+    <div class="container section-pad-lg">
+      <span class="eyebrow">About</span>
+      <h1>Honest plumbing you can <em class="accent">rely on.</em></h1>
+    </div>
   </section>
-  <!-- Main Content Section (Highly Compacted) -->
-   <section class="py-6 px-6 md:px-12 lg:px-24 max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
-     <!-- Left Column: Text (Highly Compacted) --> <div class="space-y-3">
-      <h2 class="text-xl md:text-2xl font-bold leading-tight">
-      Honest Plumbing You Can Rely On
-     </h2>
-     <div class="space-y-3 text-slate-300 leading-snug text-[12px]">
-      <p>
-       Seaside Plumbing &amp; Mechanical is a husband-and-wife owned plumbing company built on quality workmanship, clear communication, and dependable service. After relocating to North Carolina from California, we started Seaside with one goal: provide plumbing done the right way—no shortcuts, no pressure, and no unnecessary upsells.
-      </p>
-      <p>
-       We understand that plumbing issues can disrupt daily life at home and operations at work. That's why we focus on reliability, transparency, and doing the job correctly the first time. We show up when we say we will, explain issues in plain language, and provide honest recommendations so you can make informed decisions before any work begins.
-      </p>
-      <p>
-       Whether we're handling a residential repair, routine maintenance, or a commercial project, we take pride in clean, code-compliant work and treat every home and facility with respect. We work closely with homeowners, property managers, business owners, and facility teams to deliver dependable solutions that last.
-      </p>
-      <p>
-       When you call Seaside Plumbing &amp; Mechanical, you're hiring a local, family-owned team that stands behind its work and is committed to keeping your home or business running smoothly.
-      </p>
-     </div>
-    </div>
 
-     <!-- Favicon (works on Chrome, Safari, iOS, desktop) -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <section style="border-bottom:0;">
+    <div class="container section-pad-lg">
+      <div class="about-split">
+        <figure class="about-figure">
+          <img src="https://seasideplumbingco.com/assets/JB%20and%20Kenziee.jpg" alt="Jonathan and Mackenzie, the husband-and-wife owners of Seaside Plumbing">
+          <figcaption><span>Jonathan &amp; Mackenzie</span><span>Owners</span></figcaption>
+        </figure>
+        <div class="about-body">
+          <p>Seaside Plumbing &amp; Mechanical is a husband-and-wife owned company built on quality workmanship, clear communication, and dependable service. After relocating from California to North Carolina, we started Seaside with one goal — plumbing done the right way. No shortcuts. No pressure. No unnecessary upsells.</p>
+          <p>We understand plumbing issues disrupt daily life at home and operations at work. So we focus on reliability, transparency, and doing the job correctly the first time. We show up when we say we will, explain issues in plain language, and give honest recommendations so you can make informed decisions before any work begins.</p>
+          <p>Whether it's a residential repair, routine maintenance, or a full commercial project, we take pride in clean, code-compliant work and treat every home and facility with respect. We work closely with homeowners, property managers, business owners, and facility teams to deliver dependable solutions that last.</p>
+          <p>When you call Seaside Plumbing &amp; Mechanical, you're hiring a local, family-owned team that stands behind its work and is committed to keeping your home or business running smoothly.</p>
 
-  <!-- iMessage / Apple optimization -->
-  <meta name="apple-mobile-web-app-title" content="Seaside Plumbing">
-    <!-- Right Column: Image (Same size as previous) -->
-  <div class="flex justify-center lg:justify-end items-center h-full">
-      <div class="rounded-lg overflow-hidden shadow-2xl max-w-sm">
-        <img class="w-full h-auto object-cover" alt="A photo of Jonathan and Mackenzie the owners of the company." src="/assets/JB and Kenziee.jpg"/>
+          <dl class="about-meta">
+            <div><dt>Owners</dt><dd>Jonathan &amp; Mackenzie</dd></div>
+            <div><dt>Serving</dt><dd>Southeastern NC</dd></div>
+            <div><dt>Hours</dt><dd>Open 24 hours · 7 days</dd></div>
+            <div><dt>Rating</dt><dd>5.0 ★ on Google</dd></div>
+          </dl>
+
+          <div class="about-actions">
+            <a href="/contact" class="btn btn-primary">Get in touch →</a>
+            <a href="/work" class="btn btn-outline">See our work →</a>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical">
+    <div class="footer-block">
+      <span class="eyebrow">Reach us</span>
+      <dl class="footer-list">
+        <div><dt>Call</dt><dd><a href="tel:9107601009">910-760-1009</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@seasideplumbingco.com">info@seasideplumbingco.com</a></dd></div>
+        <div><dt>Hours</dt><dd>Open 24 hours · Emergency calls welcome</dd></div>
+        <div><dt>Serving</dt><dd>Southeastern NC</dd></div>
+      </dl>
     </div>
   </div>
-</section>
-     <!-- Footer (matches your other footers) -->
-  <footer class="bg-[#020617] py-14 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
-      <img alt="Seaside Plumbing & Mechanical Logo" class="h-20 md:h-24 mb-6" src="/assets/logo.png"/>
-      <div class="text-xs text-gray-400 space-y-2">
-        <p>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</p>
-        <p>Seaside Plumbing &amp; Mechanical | 910-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
-  </script>
-
+  <div class="footer-legal">© 2026 Seaside Plumbing &amp; Mechanical · Licensed &amp; insured.</div>
+</footer>
 </body>
 </html>
