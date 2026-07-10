@@ -1,178 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Seaside Plumbing & Mechanical - Service Areas
-  </title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
-
-<style>
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #020617;
-  color: white;
-  scroll-behavior: smooth;
-}
-.bg-hero {
-  background-image: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url("/assets/residentialplumber.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.dot-pattern {
-  background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1.5px, transparent 1.5px);
-  background-size: 20px 20px;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Areas — Seaside Plumbing &amp; Mechanical</title>
+  <meta name="description" content="Residential and commercial plumbing across coastal and southeastern North Carolina — Brunswick, New Hanover, Pender, and beyond.">
+  <meta property="og:title" content="Service Areas · Seaside Plumbing & Mechanical">
+  <meta property="og:description" content="NC counties served by Seaside Plumbing & Mechanical, from coastal Brunswick to the southeast.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
- </style>
-  </head>
-
-  <body class="text-white">
-    <!-- Navigation -->
-   <nav class="relative z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#020617]">
-  <!-- Logo -->
-  <a href="index.html" class="inline-flex items-center">
-    <img
-      src="/assets/logo.png"
-      alt="Seaside Plumbing & Mechanical logo"
-      class="h-20 md:h-28 w-auto"
-    />
-  </a>
-
-<!-- Desktop Links -->
-  <div class="hidden md:flex space-x-10 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="/">Home</a>
-    <a class="hover:text-orange-400 transition-colors" href="/services">Services</a>
-    <a class="hover:text-orange-400 transition-colors" href="/service-areas">Service Areas</a>
-    <a class="hover:text-orange-400 transition-colors" href="/about">About Us</a>
-    <a class="hover:text-orange-400 transition-colors" href="/photos">Photos</a>
-    <a class="hover:text-orange-400 transition-colors flex items-center" href="/faq">
-      <i class="far fa-question-circle mr-2"></i> FAQs
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="/contact">Contact Us</a>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical"></a>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/areas" class="active">Areas</a>
+      <a href="/work">Work</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <a href="tel:9107601009" class="btn btn-primary btn-sm header-cta">910 · 760 · 1009</a>
   </div>
-
-  <!-- Mobile Menu Button -->
-  <button id="menuBtn" class="md:hidden text-white text-sm uppercase tracking-widest">
-    Menu
-  </button>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="hidden bg-[#020617] border-t border-gray-800 md:hidden">
-  <div class="flex flex-col px-6 py-4 space-y-4 text-sm uppercase tracking-widest">
-    <a href="/">Home</a>
+  <nav class="mobile-nav">
+    <a href="/index">Home</a>
+    <a href="/about">About</a>
     <a href="/services">Services</a>
-    <a href="/service-areas">Service Areas</a>
-    <a href="/about">About Us</a>
-    <a href="/photos">Photos</a>
-    <a href="/faq">FAQs</a>
-    <a href="/contact">Contact Us</a>
-  </div>
-</div>
+    <a href="/areas" class="active">Areas</a>
+    <a href="/work">Work</a>
+    <a href="/faq">FAQ</a>
+    <a href="/contact">Contact</a>
+    <a href="tel:9107601009" class="call-link">Call</a>
+  </nav>
+</header>
 
+<main>
+  <section class="page-hero">
+    <div class="container section-pad-lg">
+      <span class="eyebrow">Service Areas</span>
+      <h1>Coastal &amp; southeastern <em class="accent">NC.</em></h1>
+      <p style="margin-top:1.5rem;max-width:42rem;font-size:1.125rem;color:color-mix(in oklab,var(--cream) 70%,transparent);">Seaside Plumbing &amp; Mechanical offers plumbing services across coastal and southeastern regions of North Carolina. Availability may vary by project scope and schedule.</p>
+    </div>
+  </section>
 
-    <!-- Favicon (works on Chrome, Safari, iOS, desktop) -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <section style="border-bottom:0;">
+    <div class="container section-pad-lg">
+      <div class="areas-grid">
+        <div>
+          <span class="eyebrow">Residential &amp; commercial</span>
+          <h2 style="font-family:var(--font-display);letter-spacing:-0.035em;margin-top:0.75rem;font-size:2.25rem;color:var(--cream);">Full-service counties</h2>
+          <ul class="area-list">
+            <li><span class="name">Brunswick County</span><span class="tag">Serving</span></li>
+            <li><span class="name">New Hanover County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Pender County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Columbus County</span><span class="tag">Serving</span></li>
+          </ul>
+        </div>
+        <div>
+          <span class="eyebrow">Commercial only</span>
+          <h2 style="font-family:var(--font-display);letter-spacing:-0.035em;margin-top:0.75rem;font-size:2.25rem;color:var(--cream);">Extended coverage</h2>
+          <ul class="area-list">
+            <li><span class="name">Bladen County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Onslow County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Duplin County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Sampson County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Robeson County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Wayne County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Lenoir County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Carteret County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Johnston County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Harnett County</span><span class="tag">Serving</span></li>
+            <li><span class="name">Cumberland County</span><span class="tag">Serving</span></li>
+          </ul>
+        </div>
+      </div>
 
-  <!-- Open Graph / Text Message Preview -->
- <meta property="og:title" content="Seaside Plumbing & Mechanical">
-<meta property="og:description" content="Residential & Commercial Plumbing Services Across Coastal North Carolina">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://seasideplumbingco.com/">
-<meta property="og:image" content="https://seasideplumbingco.com/assets/logo-share.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:type" content="image/png">
-
-  <!-- iMessage / Apple optimization -->
-  <meta name="apple-mobile-web-app-title" content="Seaside Plumbing">
-
-
-<!-- Hero Section -->
-<section class="relative h-[300px] flex items-center justify-center overflow-hidden">
-  <img class="absolute inset-0 w-full h-full object-cover opacity-40"
-       src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=80&w=1920"
-       alt="Commercial plumbing"/>
-  <div class="absolute inset-0 bg-black/40"></div>
-  <h1 class="relative text-4xl font-bold z-10">Service Areas</h1>
-</section>
-
-<!-- Main Content -->
-<main class="max-w-5xl mx-auto px-6 py-20 text-center">
-
-<p class="text-gray-300 text-lg mb-10 max-w-3xl mx-auto leading-relaxed">
-Seaside Plumbing & Mechanical offers plumbing services across the coastal
-and southeastern regions of North Carolina.
-</p>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto">
-
-<div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-8">
-<h2 class="text-xl font-bold mb-5">Residential & Commercial Plumbing Services</h2>
-<ul class="space-y-3 text-gray-300">
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Brunswick County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>New Hanover County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Pender County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Columbus County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Bladen County</li>
-</ul>
-</div>
-
-<div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-8">
-<h2 class="text-xl font-bold mb-5">Commercial-Only Plumbing Services</h2>
-<ul class="space-y-3 text-gray-300">
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Onslow County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Duplin County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Sampson County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Robeson County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Wayne County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Lenoir County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Carteret County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Johnston County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Harnett County</li>
-<li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-3"></span>Cumberland County</li>
-</ul>
-</div>
-
-</div>
-
-<p class="text-gray-400 text-sm mt-10 max-w-3xl mx-auto">
-Availability of services may differ based on the project's scope and schedule.
-</p>
-<!-- ✅ MATCHED BUTTON -->
-<div class="mt-10">
-  <a href="contact.html"
-     class="inline-flex items-center justify-center bg-[#f97316] text-white font-bold py-4 px-10 rounded-full transition-all shadow-xl hover:bg-[#ea580c]">
-     Check My Area
-     <i class="fas fa-arrow-right ml-3"></i>
-  </a>
-</div>
-</main>
-  <!-- Footer (matches your other footers) -->
-  <footer class="bg-[#020617] py-14 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
-      <img alt="Seaside Plumbing & Mechanical Logo" class="h-20 md:h-24 mb-6" src="/assets/logo.png"/>
-      <div class="text-xs text-gray-400 space-y-2">
-        <p>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</p>
-        <p>Seaside Plumbing &amp; Mechanical | 910-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</p>
+      <div class="areas-actions">
+        <a href="contact.html" class="btn btn-primary">Check my area →</a>
+        <a href="tel:9107601009" class="eyebrow" style="color:var(--cream);border-bottom:1px solid currentColor;padding-bottom:2px;">or call 910-760-1009</a>
       </div>
     </div>
-  </footer>
+  </section>
+</main>
 
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
-  </script>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical">
+    <div class="footer-block">
+      <span class="eyebrow">Reach us</span>
+      <dl class="footer-list">
+        <div><dt>Call</dt><dd><a href="tel:9107601009">910-760-1009</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@seasideplumbingco.com">info@seasideplumbingco.com</a></dd></div>
+        <div><dt>Hours</dt><dd>Open 24 hours · Emergency calls welcome</dd></div>
+        <div><dt>Serving</dt><dd>Southeastern NC</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="footer-legal">© 2026 Seaside Plumbing &amp; Mechanical · Licensed &amp; insured.</div>
+</footer>
 </body>
 </html>
