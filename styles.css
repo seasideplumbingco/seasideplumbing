@@ -395,6 +395,15 @@ fieldset { border: 0; }
   color: color-mix(in oklab, var(--cream) 82%, transparent);
 }
 
+.terms-item {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--cream) 15%, transparent);
+}
+
+.terms-item:first-child {
+  padding-top: 0;
+}
+
 .terms-authorization {
   max-width: 950px;
   margin: 4rem auto 0;
