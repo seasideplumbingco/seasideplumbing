@@ -1,276 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Seaside Plumbing & Mechanical - Home Page
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
- <style>
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #020617;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-.bg-hero {
-    background-image: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url("assets/residentialplumber.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.dot-pattern {
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px);
-    background-size: 20px 20px;
-}
-
-/* ORANGE ACCENT COLORS */
-
-.accent-color {
-  color: #f97316;
-}
-
-.accent-bg {
-  background-color: #f97316;
-}
-
-.accent-bg:hover {
-  background-color: #ea580c;
-}
-
-.accent-icon-bg {
-  background-color: rgba(249, 115, 22, 0.1);
-}
-</style>
-  </head>
-
-  <body class="text-white">
-    <!-- Navigation -->
-   <nav class="relative z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#020617]">
-  <!-- Logo -->
-  <a href="index.html" class="inline-flex items-center">
-    <img
-      src="assets/logo.png"
-      alt="Seaside Plumbing & Mechanical logo"
-      class="h-20 md:h-28 w-auto"
-    />
-  </a>
-
-<!-- Desktop Links -->
-  <div class="hidden md:flex space-x-10 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
-    <a class="hover:text-orange-400 transition-colors" href="services">Services</a>
-    <a class="hover:text-orange-400 transition-colors" href="service-areas">Service Areas</a>
-    <a class="hover:text-orange-400 transition-colors" href="about">About Us</a>
-    <a class="hover:text-orange-400 transition-colors" href="photos">Photos</a>
-    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq">
-      <i class="far fa-question-circle mr-2"></i> FAQs
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="contact">Contact Us</a>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seaside Plumbing &amp; Mechanical — Coastal NC Plumbers</title>
+  <meta name="description" content="Husband-and-wife owned plumbing serving Wilmington and Brunswick County, NC. Commercial new construction and residential repairs — built right, from the ground up.">
+  <meta property="og:title" content="Seaside Plumbing & Mechanical">
+  <meta property="og:description" content="Ground-up commercial plumbing and honest residential service across coastal North Carolina.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical"></a>
+    <nav class="main-nav">
+      <a href="/" class="active">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/areas">Areas</a>
+      <a href="/work">Work</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <a href="tel:9107601009" class="btn btn-primary btn-sm header-cta">910 · 760 · 1009</a>
   </div>
+  <nav class="mobile-nav">
+    <a href="/" class="active">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/areas">Areas</a>
+    <a href="/work">Work</a>
+    <a href="/faq">FAQ</a>
+    <a href="/contact">Contact</a>
+    <a href="tel:9107601009" class="call-link">Call</a>
+  </nav>
+</header>
 
-  <!-- Mobile Menu Button -->
-  <button id="menuBtn" class="md:hidden text-white text-sm uppercase tracking-widest">
-    Menu
-  </button>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="hidden bg-[#020617] border-t border-gray-800 md:hidden">
-  <div class="flex flex-col px-6 py-4 space-y-4 text-sm uppercase tracking-widest">
-    <a href="index.html">Home</a>
-    <a href="services">Services</a>
-    <a href="service-areas">Service Areas</a>
-    <a href="about">About Us</a>
-    <a href="photos">Photos</a>
-    <a href="faq">FAQs</a>
-    <a href="contact">Contact Us</a>
-  </div>
-</div>
-
-    <!-- Favicon (works on Chrome, Safari, iOS, desktop) -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- Open Graph / Text Message Preview -->
-<meta property="og:title" content="Seaside Plumbing & Mechanical">
-<meta property="og:description" content="Residential & Commercial Plumbing Services Across Coastal North Carolina">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://seasideplumbingco.com/">
-<meta property="og:image" content="https://seasideplumbingco.com/assets/logo-share.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:type" content="image/png">
-
-  <!-- iMessage / Apple optimization -->
-  <meta name="apple-mobile-web-app-title" content="Seaside Plumbing">
-
- <!-- Hero Section (MATCHES OTHER PAGES STRUCTURE) -->
-<section class="relative h-[650px] flex items-center justify-center overflow-hidden">
- 
-
-  <!-- Background Image -->
-  <img
-    alt="Commercial plumber"
-    class="absolute inset-0 w-full h-full object-cover opacity-40"
-    src="assets/plumber-11.jpg"
-  />
-
-  <!-- Dark Overlay -->
-  <div class="absolute inset-0 bg-black/40"></div>
-
-  <!-- Centered Content -->
-  <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-
-    <span class="inline-block accent-color font-bold tracking-[0.3em] uppercase text-xs mb-6">
-      Licensed &amp; Insured Professionals
-    </span>
-
-    <h1 class="text-5xl md:text-8xl font-extrabold leading-[1.05] mb-8 tracking-tight">
-      From Ground-Up <span class="accent-color">Commercial</span> to Expert
-      <span class="accent-color">Residential</span>
-    </h1>
-
-    <p class="text-lg md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto font-light">
-      Specializing in large-scale commercial new construction and dependable residential repairs.
-      Built right, from the ground up.
-  </p>
-
-       <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                <a class="w-full md:w-auto inline-flex items-center justify-center accent-bg text-white font-bold py-4 px-10 rounded-full transition-all shadow-2xl" href="contact">
-     Schedule a Estimate Today <i class="fas fa-arrow-right ml-2"></i>
-      </a>
-      <a class="inline-flex items-center justify-center border border-slate-700 bg-slate-900/50 backdrop-blur text-white font-bold py-4 px-10 rounded-full hover:bg-slate-800 transition-all"
-        href="tel:9107601009"
-      >
-        <i class="fas fa-phone-alt mr-3 accent-color"></i> 910-760-1009
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-  <!-- Dual Focus Section -->
-  <section class="py-20 px-6 bg-slate-950">
-    <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-4">
-            <!-- Commercial Card -->
-            <div class="service-card bg-slate-900/30 border border-slate-800 p-12 rounded-[2.5rem] flex flex-col h-full">
-                <div class="w-16 h-16 accent-icon-bg rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-city accent-color text-2xl"></i>
-                </div>
-                <h2 class="text-3xl font-extrabold mb-6">Commercial New Construction</h2>
-                <p class="text-slate-400 text-lg leading-relaxed mb-8 flex-grow">
-                    Complete plumbing solutions for new commercial builds. We handle everything from underground rough-ins to final fixture installations for offices, retail, and industrial spaces.
-                </p>
-                <ul class="space-y-4 mb-10 text-slate-300">
-                    <li class="flex items-center"><i class="fas fa-check accent-color mr-3"></i> Ground-up Installations</li>
-                    <li class="flex items-center"><i class="fas fa-check accent-color mr-3"></i> Industrial Piping Systems</li>
-                    <li class="flex items-center"><i class="fas fa-check accent-color mr-3"></i> Code Compliance Experts</li>
-                </ul>
-                <a href="photos" class="accent-color font-bold flex items-center hover:underline">View Commercial Projects <i class="fas fa-chevron-right ml-2 text-xs"></i></a>
-            </div>
-
-            <!-- Residential Card -->
-            <div class="service-card bg-slate-900/30 border border-slate-800 p-12 rounded-[2.5rem] flex flex-col h-full">
-                <div class="w-16 h-16 accent-icon-bg rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-home accent-color text-2xl"></i>
-                </div>
-                <h2 class="text-3xl font-extrabold mb-6">Residential Repairs &amp; Service</h2>
-                <p class="text-slate-400 text-lg leading-relaxed mb-8 flex-grow">
-                    Tired of plumbing problems that never seem to go away? Our expert team provides reliable, high-quality repairs and maintenance to keep your home running smoothly.
-                </p>
-                <ul class="space-y-4 mb-10 text-slate-300">
-                    <li class="flex items-center"><i class="fas fa-check accent-color mr-3"></i> 24/7 Emergency Repairs</li>
-                    <li class="flex items-center"><i class="fas fa-check accent-color mr-3"></i> Water Heater Services</li>
-                    <li class="flex items-center"><i class="fas fa-check accent-color mr-3"></i> Drain Cleaning &amp; Jetting</li>
-                </ul>
-                <a href="contact" class="accent-color font-bold flex items-center hover:underline">Book a Repair <i class="fas fa-chevron-right ml-2 text-xs"></i></a>
-            </div>
-  </section>
-
-  <!-- The Seaside Difference -->
-  <section class="py-20 px-6 bg-[#020617]">
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
-        <div class="relative">
-            <div class="rounded-[3rem] overflow-hidden shadow-2xl border border-slate-800">
-                <img alt="Plumber installing a sink. Two white cabinets are on the sides of him." class="w-full h-full object-cover" src="assets/JB plumbing sink.PNG"/>
-            </div>
-            <div class="absolute -bottom-6 -right-6 accent-bg p-5 rounded-2xl shadow-xl hidden md:block">
-                <p class="text-white font-black text-3xl">15+</p>
-                <p class="text-white font-bold text-xs uppercase tracking-widest">Years of Excellence</p>
-            </div>
-        </div>
-        <div>
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
-                The Plumbing <span class="italic accent-color">Difference</span>
-            </h2>
-            <p class="text-xl text-slate-300 font-bold mb-6">Quality, care, and professionalism on every project.</p>
-            <p class="text-slate-400 text-lg leading-relaxed mb-10 font-light">
-                We take pride in honest work, fair prices, and fixing problems the right way—not the quick way. Whether it's a massive commercial site or a leaky kitchen faucet, you're getting a plumber you can trust.
-            </p>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="flex items-start">
-                    <i class="fas fa-clock accent-color mt-1 mr-3"></i>
-                    <div>
-                        <h4 class="font-bold">24/7 Support</h4>
-                        <p class="text-sm text-slate-500">Emergency calls ready</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- Consolidated Bottom Section -->
-  <section class="py-20 px-6 bg-slate-950 relative overflow-hidden">
-    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
-    <div class="max-w-5xl mx-auto">
-        <div class="bg-slate-900/40 border border-slate-800 rounded-[3rem] p-12 md:p-20 text-center relative z-10">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight">Ready to solve your plumbing challenges?</h2>
-            <p class="text-slate-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light">
-                Whether you're planning a new commercial build or need a residential repair, our team is standing by to help.
-            </p>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                <a class="w-full md:w-auto inline-flex items-center justify-center accent-bg text-white font-bold py-5 px-12 rounded-full transition-all shadow-2xl" href="contact">
-                    Get a Free Estimate
-                </a>
-                <a class="w-full md:w-auto inline-flex items-center justify-center bg-[#d32323] text-white font-bold py-5 px-12 rounded-full hover:bg-red-600 transition-all shadow-2xl shadow-red-900/10" href="https://www.yelp.com/biz/seaside-plumbing-and-mechanical-wilmington?osq=Seaside+Plumbing+%26+Mechanical" target="_blank">
-                    <i class="fab fa-yelp mr-3 text-xl"></i> Read Yelp Reviews
-                </a>
-             <a class="w-full md:w-auto inline-flex items-center justify-center bg-[#34A853] text-white font-bold py-5 px-12 rounded-full hover:bg-green-600 transition-all shadow-2xl shadow-green-900/10" href="https://share.google/qtMVmtZwu8LklbXAS">
-                    <i class="fab fa-google mr-3 text-xl"></i> Read Google Reviews
-                </a>
-            </div>
-        </div>
-    </div>
-  </section>
-
-    <!-- Footer (matches your other footers) -->
-  <footer class="bg-[#020617] py-14 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
-      <img alt="Seaside Plumbing & Mechanical Logo" class="h-20 md:h-24 mb-6" src="assets/logo.png"/>
-      <div class="text-xs text-gray-400 space-y-2">
-        <p>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</p>
-        <p>Seaside Plumbing &amp; Mechanical | 910-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</p>
+<main>
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('https://seasideplumbingco.com/assets/jb-plumbing-1.jpg')" aria-hidden="true"></div>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="rule"><span>Licensed &amp; insured · Coastal North Carolina<div class="rule"></span></div>
+      <h1>From ground-up<br><em class="accent">commercial</em> to<br>expert <em class="accent">residential.</em></h1>
+      <p>A husband-and-wife plumbing company built on quality workmanship, honest pricing, and doing the job right the first time. Serving New Hanover County, Brunswick County, and coastal NC.</p>
+      <div class="hero-cta">
+        <a href="/contact" class="btn btn-primary">Schedule an estimate →</a>
+        <a href="tel:9107601009" class="btn btn-outline">Call 910-760-1009</a>
       </div>
     </div>
-  </footer>
+    <div class="stat-strip">
+      <div class="stat-grid">
+        <div><span class="stat-n">15+</span><span class="stat-l">Years experience</span></div>
+        <div><span class="stat-n">24/7</span><span class="stat-l">Emergency ready</span></div>
+        <div><span class="stat-n">5.0★</span><span class="stat-l">Google reviews</span></div>
+        <div><span class="stat-n">NC</span><span class="stat-l">Coastal counties</span></div>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
-  </script>
+  <section>
+    <div class="container section-pad">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">What we do</span>
+          <h2>Two sides of the <em class="accent">trade.</em></h2>
+        </div>
+        <a href="/services" class="section-link">All services →</a>
+      </div>
+      <div class="two-col">
+        <div class="preview-card">
+          <span class="eyebrow">Commercial</span>
+          <h3>New construction, tenant fit-outs, mechanical rooms.</h3>
+          <ul class="preview-list">
+            <li>Ground-up installations</li>
+            <li>Industrial piping systems</li>
+            <li>Code compliance experts</li>
+          </ul>
+        </div>
+        <div class="preview-card">
+          <span class="eyebrow">Residential</span>
+          <h3>Repairs, remodels, water heaters, and 24/7 service.</h3>
+          <ul class="preview-list">
+            <li>24/7 emergency repairs</li>
+            <li>Water heater services</li>
+            <li>Drain cleaning &amp; jetting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="tint">
+    <div class="container section-pad">
+      <div class="split-12">
+        <div>
+          <span class="eyebrow">The difference</span>
+          <h2>Quality, care, professionalism on every project.</h2>
+        </div>
+        <div>
+          <p>We take pride in honest work, fair prices, and fixing problems the right way — not the quick way. Whether it's a massive commercial site or a leaky kitchen faucet, you're getting a plumber you can trust.</p>
+          <dl class="feature-grid">
+            <div class="feature"><dt>Licensed &amp; insured</dt><dd>Fully credentialed for commercial and residential work in North Carolina.</dd></div>
+            <div class="feature"><dt>Straight answers</dt><dd>No pressure, no upsells. Clear scope, clear pricing, work explained in plain language.</dd></div>
+            <div class="feature"><dt>Code-compliant</dt><dd>Every install and repair meets applicable NC plumbing code — no shortcuts.</dd></div>
+            <div class="feature"><dt>Locally owned</dt><dd>Family-run and rooted in coastal NC. We stand behind every job, day or night.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container section-pad-lg">
+      <div class="reviews-grid">
+        <div>
+          <span class="eyebrow">Reviews</span>
+          <h2 style="font-family:var(--font-display);letter-spacing:-0.035em;margin-top:1rem;font-size:3rem;">5.0★ on <em class="accent">Google.</em></h2>
+          <p style="margin-top:1.5rem;max-width:28rem;font-size:1.125rem;color:color-mix(in oklab,var(--cream) 70%,transparent);">Read what neighbors across southeastern NC are saying — and if we've helped you, we'd love a review.</p>
+        </div>
+        <div class="reviews-actions">
+          <a href="https://share.google/qtMVmtZwu8LklbXAS" target="_blank" rel="noopener" class="btn btn-primary">Read Google reviews →</a>
+          <a href="https://www.yelp.com/biz/seaside-plumbing-and-mechanical-wilmington?osq=Seaside+Plumbing+%26+Mechanical" target="_blank" rel="noopener" class="btn btn-outline">Find us on Yelp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container section-pad-lg">
+      <span class="eyebrow">On the job</span>
+      <h2 style="font-family:var(--font-display);letter-spacing:-0.035em;margin-top:1rem;font-size:2.5rem;max-width:40rem;">The <em class="accent">plumber</em> at your door.</h2>
+      <figure class="center-photo">
+        <img src="https://seasideplumbingco.com/assets/JB%20plumbing%20sink.PNG" alt="JB installing under-sink plumbing on a residential job." loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--deep);">Contact</span>
+        <h2>Ready to solve your <em style="font-weight:300;font-style:italic;">plumbing</em> challenges?</h2>
+        <p>Planning a new commercial build or need a residential repair? Our team is standing by — we answer calls day and night.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="/contact" class="btn btn-dark">Get in touch →</a>
+        <a href="tel:9107601009" class="eyebrow" style="color:var(--deep);border-bottom:1px solid var(--deep);padding-bottom:2px;">or 910-760-1009</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical">
+    <div class="footer-block">
+      <span class="eyebrow">Reach us</span>
+      <dl class="footer-list">
+        <div><dt>Call</dt><dd><a href="tel:9107601009">910-760-1009</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@seasideplumbingco.com">info@seasideplumbingco.com</a></dd></div>
+        <div><dt>Hours</dt><dd>Open 24 hours · Emergency calls welcome</dd></div>
+        <div><dt>Serving</dt><dd>Southeastern NC</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="footer-legal">© 2026 Seaside Plumbing &amp; Mechanical · Licensed &amp; insured.</div>
+</footer>
 </body>
-
-
+</html>
