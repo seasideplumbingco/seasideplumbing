@@ -1,161 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Seaside Plumbing & Mechanical - Contact Us
-  </title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #020617;
-      color: white;
-    }
- </style>
-  </head>
-
-  <body class="text-white">
-    <!-- Navigation -->
-   <nav class="relative z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#020617]">
-  <!-- Logo -->
-  <a href="index.html" class="inline-flex items-center">
-    <img
-      src="/assets/logo.png"
-      alt="Seaside Plumbing & Mechanical logo"
-      class="h-20 md:h-28 w-auto"
-    />
-  </a>
-
-<!-- Desktop Links -->
-  <div class="hidden md:flex space-x-10 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="/">Home</a>
-    <a class="hover:text-orange-400 transition-colors" href="/services">Services</a>
-    <a class="hover:text-orange-400 transition-colors" href="/service">Service Areas</a>
-    <a class="hover:text-orange-400 transition-colors" href="/about">About Us</a>
-    <a class="hover:text-orange-400 transition-colors" href="/photos">Photos</a>
-    <a class="hover:text-orange-400 transition-colors flex items-center" href="/faq">
-      <i class="far fa-question-circle mr-2"></i> FAQs
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="/contact">Contact Us</a>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Seaside Plumbing &amp; Mechanical</title>
+  <meta name="description" content="Call Seaside Plumbing & Mechanical at 910-760-1009 or send us a message for 24/7 plumbing service across Wilmington and Brunswick County, NC.">
+  <meta property="og:title" content="Contact Seaside Plumbing & Mechanical">
+  <meta property="og:description" content="Open 24 hours · Call 910-760-1009 for coastal NC plumbing service.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical"></a>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/areas">Areas</a>
+      <a href="/work">Work</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact" class="active">Contact</a>
+    </nav>
+    <a href="tel:9107601009" class="btn btn-primary btn-sm header-cta">910 · 760 · 1009</a>
   </div>
-
-  <!-- Mobile Menu Button -->
-  <button id="menuBtn" class="md:hidden text-white text-sm uppercase tracking-widest">
-    Menu
-  </button>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="hidden bg-[#020617] border-t border-gray-800 md:hidden">
-  <div class="flex flex-col px-6 py-4 space-y-4 text-sm uppercase tracking-widest">
+  <nav class="mobile-nav">
     <a href="/">Home</a>
+    <a href="/about">About</a>
     <a href="/services">Services</a>
-    <a href="/service-areas">Service Areas</a>
-    <a href="/about">About Us</a>
-    <a href="/photos">Photos</a>
-    <a href="/faq">FAQs</a>
-    <a href="/contact">Contact Us</a>
-  </div>
-</div>
+    <a href="/areas">Areas</a>
+    <a href="/work">Work</a>
+    <a href="/faq">FAQ</a>
+    <a href="/contact" class="active">Contact</a>
+    <a href="tel:9107601009" class="call-link">Call</a>
+  </nav>
+</header>
 
+<main>
+  <section style="border-bottom:0;">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's get it <em class="accent">done.</em></h1>
+        <p>Whether you're planning a new commercial build or need a residential repair, our team is standing by. We answer calls day and night.</p>
+        <a href="tel:9107601009" class="btn btn-primary">Call 910-760-1009 →</a>
 
-    <!-- Favicon (works on Chrome, Safari, iOS, desktop) -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <dl class="contact-rows">
+          <div class="contact-row"><span class="k">Email</span><a class="v" href="mailto:info@seasideplumbingco.com">info@seasideplumbingco.com</a></div>
+          <div class="contact-row"><span class="k">Hours</span><span class="v">Open 24 hours · 7 days</span></div>
+          <div class="contact-row"><span class="k">Serving</span><span class="v">Southeastern NC</span></div>
+        </dl>
+      </div>
 
-  <!-- Open Graph / Text Message Preview -->
- <meta property="og:title" content="Seaside Plumbing & Mechanical">
-<meta property="og:description" content="Residential & Commercial Plumbing Services Across Coastal North Carolina">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://seasideplumbingco.com/">
-<meta property="og:image" content="https://seasideplumbingco.com/assets/logo-share.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:type" content="image/png">
+      <div class="form-col">
+        <span class="eyebrow">Send a message</span>
+        <h2>Tell us about the project</h2>
 
-  <!-- iMessage / Apple optimization -->
-  <meta name="apple-mobile-web-app-title" content="Seaside Plumbing">
+        <form action="https://formspree.io/f/mbdglobk" method="POST" class="contact-form">
+          <div class="field"><label for="name">Name <span class="req">*</span></label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
 
-<!-- Hero -->
-<section class="relative h-[300px] flex items-center justify-center overflow-hidden">
-  <img class="absolute inset-0 w-full h-full object-cover opacity-40" src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=80&w=1920" />
-  <div class="absolute inset-0 bg-black/40"></div>
-  <h1 class="relative text-4xl font-bold z-10">Contact Us</h1>
-</section>
+          <fieldset>
+            <legend>Service type</legend>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="service_type" value="Residential" checked><span>Residential</span></label>
+              <label class="radio-option"><input type="radio" name="service_type" value="Commercial"><span>Commercial</span></label>
+            </div>
+          </fieldset>
 
-<!-- CONTACT SECTION — MATCHES YOUR GOOD PAGE -->
-<section class="py-6 px-6 md:px-12 lg:px-24 max-w-6xl mx-auto">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Describe what you need — new construction, remodel, repair, water heater, etc."></textarea>
+          </div>
 
-    <!-- Left -->
-    <div>
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-        Love To Get<br/>In Touch!
-      </h2>
-      <p class="text-lg">
-        <span class="font-bold">Phone:</span> 910-760-1009
-      </p>
-    </div>
-
-    <!-- Form -->
-    <div>
-      <h3 class="text-2xl font-bold mb-6">Request Service</h3>
-
-      <form action="https://formspree.io/f/mbdglobk" method="POST" class="space-y-4">
-
-        <div class="grid md:grid-cols-2 gap-4">
-          <input class="w-full p-4 rounded bg-white text-black" name="name" placeholder="Full Name" required>
-          <input class="w-full p-4 rounded bg-white text-black" name="email" placeholder="Email" required>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-4">
-          <input class="w-full p-4 rounded bg-white text-black" name="company" placeholder="Company (optional)">
-          <input class="w-full p-4 rounded bg-white text-black" name="phone" placeholder="Phone">
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-4">
-          <select required class="w-full p-4 rounded bg-white text-black" name="request_type">
-            <option disabled selected>Residential or Commercial?</option>
-            <option>Residential</option>
-            <option>Commercial</option>
-          </select>
-          <input class="w-full p-4 rounded bg-white text-black" name="subject" placeholder="Subject">
-        </div>
-
-        <textarea class="w-full p-4 rounded bg-white text-black" rows="6" name="message" required
-          placeholder="Service location, timeline, and details"></textarea>
-
-        <button type="submit"
-          class="bg-[#f97316] hover:bg-[#ea580c] text-white font-bold py-4 px-10 rounded-full">
-          Submit Request <i class="fas fa-arrow-right ml-2"></i>
-        </button>
-
-      </form>
-    </div>
-
-  </div>
-</section>
-  <!-- Footer (matches your other footers) -->
-  <footer class="bg-[#020617] py-14 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
-      <img alt="Seaside Plumbing & Mechanical Logo" class="h-20 md:h-24 mb-6" src="/assets/logo.png"/>
-      <div class="text-xs text-gray-400 space-y-2">
-        <p>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</p>
-        <p>Seaside Plumbing &amp; Mechanical | 910-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</p>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;margin-top:0.5rem;">Send message →</button>
+        </form>
       </div>
     </div>
-  </footer>
+  </section>
+</main>
 
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
-  </script>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="https://seasideplumbingco.com/assets/logo.png" alt="Seaside Plumbing & Mechanical">
+    <div class="footer-block">
+      <span class="eyebrow">Reach us</span>
+      <dl class="footer-list">
+        <div><dt>Call</dt><dd><a href="tel:9107601009">910-760-1009</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@seasideplumbingco.com">info@seasideplumbingco.com</a></dd></div>
+        <div><dt>Hours</dt><dd>Open 24 hours · Emergency calls welcome</dd></div>
+        <div><dt>Serving</dt><dd>Southeastern NC</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="footer-legal">© 2026 Seaside Plumbing &amp; Mechanical · Licensed &amp; insured.</div>
+</footer>
 </body>
 </html>
