@@ -349,6 +349,78 @@ fieldset { border: 0; }
 .radio-option:has(input:checked) { border-color: var(--rust); background: color-mix(in oklab, var(--rust) 10%, var(--ink)); }
 .radio-option input { accent-color: var(--rust); }
 
+/* Terms and Conditions */
+
+.terms-page h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: var(--cream);
+}
+
+@media (min-width: 768px) {
+  .terms-page h1 {
+    font-size: 4.5rem;
+  }
+}
+
+.terms-intro {
+  max-width: 950px;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+.terms-intro p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: color-mix(in oklab, var(--cream) 82%, transparent);
+}
+
+.terms-list {
+  max-width: 950px;
+  margin: 4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.terms-item {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--cream) 15%, transparent);
+}
+
+.terms-item h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  color: var(--rust);
+}
+
+.terms-item p {
+  font-size: 1.075rem;
+  line-height: 1.8;
+  color: color-mix(in oklab, var(--cream) 82%, transparent);
+}
+
+.terms-authorization {
+  max-width: 950px;
+  margin: 4rem auto 0;
+  padding-top: 3rem;
+  border-top: 1px solid color-mix(in oklab, var(--cream) 20%, transparent);
+  text-align: center;
+}
+
+.terms-authorization h2 {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  color: var(--cream);
+}
+
+.terms-authorization p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: color-mix(in oklab, var(--cream) 82%, transparent);
+}
+
 /* Footer */
 .site-footer { background: var(--ink); color: color-mix(in oklab, var(--cream) 70%, transparent); border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); }
 .footer-inner { max-width: 1400px; margin: 0 auto; padding: 4rem 1.5rem; text-align: center; display: grid; gap: 2.5rem; }
