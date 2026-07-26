@@ -235,7 +235,7 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 
 .cta-grid h2 {
   text-align: center;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
 
