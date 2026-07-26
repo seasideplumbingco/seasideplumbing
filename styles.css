@@ -103,6 +103,41 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .rule { display: flex; align-items: center; gap: 0.75rem; color: var(--rust); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; }
 .rule::before { content: ""; height: 1px; width: 2.5rem; background: var(--rust); }
 
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 2;
+  color: white; /* change if needed */
+}
+
+.hero-text .accent {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero-text span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.center-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Hero */
 .hero { position: relative; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.3; }
