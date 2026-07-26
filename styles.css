@@ -211,14 +211,14 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 /* Reviews block */
 .reviews-grid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
   .reviews-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     align-items: center;
-    max-width: 1000px;
   }
 }
 
