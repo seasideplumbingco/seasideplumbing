@@ -109,36 +109,36 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   text-align: center;
 }
 
-.hero-text {
-  text-align: center;
-  max-width: 40rem;
-  margin: 0 auto 2rem auto;
-  position: static;
-  transform: none;
-  width: 100%;
-}
- .hero {
+.hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .hero-text {
-  width: 40rem;
-  max-width: 100%;
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   text-align: center;
-  margin-bottom: 2rem;
-} 
+  z-index: 5;
+}
 
-.hero-text .accent,
+.hero-text .accent {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
 .hero-text span {
   display: block;
 }
 
-.center-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
+.center-photo {
+  position: relative;
+  max-width: 40rem;
+  margin: 3rem auto 0;
 }
 
 /* Hero */
