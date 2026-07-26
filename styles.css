@@ -107,27 +107,31 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
    Hero Photo + Overlay Text
 ========================== */
 
-.hero {
-  position: relative;
+/* Photo Feature */
+
+.photo-section {
+  padding: 6rem 0;
+}
+
+.photo-feature {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: visible;
+  text-align: center;
 }
 
 .hero-text {
-  position: absolute;
-  top: -5rem; /* move text above photo */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  position: static;
+  transform: none;
+  width: auto;
+  max-width: 700px;
+  margin-bottom: 2rem;
   text-align: center;
-  z-index: 10;
 }
 
 .hero-text .accent {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   font-size: 1rem;
 }
 
@@ -138,10 +142,9 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 }
 
 .center-photo {
-  position: relative;
   max-width: 40rem;
   width: 100%;
-  margin: 4rem auto 0;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -149,7 +152,6 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  display: block;
 }
 
 /* Hero */
