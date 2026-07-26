@@ -209,10 +209,12 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .tint { background: color-mix(in oklab, var(--ink) 40%, transparent); }
 
 /* Reviews block */
-.reviews-grid { display: grid; gap: 2.5rem; }
-@media (min-width: 768px) { .reviews-grid { grid-template-columns: 5fr 7fr; } }
-.reviews-actions { display: flex; flex-direction: column; gap: 1rem; }
-@media (min-width: 768px) { .reviews-actions { align-items: flex-end; justify-content: flex-end; } }
+@media (min-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: 6fr 6fr;
+    gap: 1.5rem;
+  }
+}
 
 /* Sink photo */
 .center-photo { max-width: 40rem; margin: 3rem auto 0; overflow: hidden; background: color-mix(in oklab, var(--ink) 60%, transparent); }
