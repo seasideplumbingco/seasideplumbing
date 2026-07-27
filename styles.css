@@ -110,7 +110,7 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 /* Photo Feature */
 
 .photo-section {
-  padding: 6rem 0;
+  padding: 4rem 0 0;
 }
 
 .photo-feature {
@@ -209,6 +209,10 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .tint { background: color-mix(in oklab, var(--ink) 40%, transparent); }
 
 /* Reviews block */
+
+.reviews-section {
+  padding-top: 3rem;   /* override .section-pad's 5–7rem top */
+}
 .reviews-grid {
   display: grid;
   gap: 2rem;
@@ -223,7 +227,10 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 }
 
 /* Sink photo */
-.center-photo { max-width: 40rem; margin: 3rem auto 0; overflow: hidden; background: color-mix(in oklab, var(--ink) 60%, transparent); }
+.center-photo {
+  margin: 1.5rem auto 0;  /* was: 3rem auto 0 */
+}
+
 .center-photo img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
 
 /* Final CTA */
