@@ -108,7 +108,6 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 ========================== */
 
 /* Photo Feature */
-
 .photo-section {
   padding: 4rem 0 0;
 }
@@ -142,9 +141,9 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 }
 
 .center-photo {
-  max-width: 5rem;
+  max-width: 1000px;   /* was 5rem — this restores the image size */
   width: 100%;
-  margin: 0 auto;
+  margin: 1.5rem auto 0;
   overflow: hidden;
 }
 
@@ -153,6 +152,7 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   aspect-ratio: 4 / 5;
   object-fit: cover;
 }
+
 
 /* Hero */
 .hero { position: relative; overflow: hidden; }
@@ -226,21 +226,12 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   }
 }
 
-/* Sink photo */
-.center-photo {
-  margin: 1.5rem auto 0;  /* was: 3rem auto 0 */
-}
-
-.center-photo img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
-
 /* Final CTA */
 .cta-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
   max-width: 900px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
