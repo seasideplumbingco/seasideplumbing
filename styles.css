@@ -215,12 +215,18 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .areas-actions { margin-top: 2rem; padding-top: 2.5rem; border-top: 1px solid color-mix(in oklab, var(--cream) 15%, transparent); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
 
 /* Work gallery */
-.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-@media (min-width: 768px) { .gallery { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
-.gallery figure { overflow: hidden; background: color-mix(in oklab, var(--ink) 60%, transparent); }
-.gallery figure.wide { grid-column: span 2; }
-.gallery img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; opacity: 0.9; transition: transform .7s, opacity .3s; }
-.gallery figure:hover img { transform: scale(1.03); opacity: 1; }
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .work-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
 
 /* FAQ */
 .faq-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem; }
