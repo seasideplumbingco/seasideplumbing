@@ -223,8 +223,13 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 
 @media (min-width: 768px) {
   .work-gallery {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .work-gallery {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
