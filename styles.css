@@ -230,7 +230,6 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   margin: 3rem auto;
   padding: 0 1rem 4rem;
 }
-}
 
 @media (min-width: 768px) {
   .work-gallery {
