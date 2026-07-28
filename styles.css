@@ -218,6 +218,7 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   justify-content: center;
   gap: 1rem;
   margin: 4rem auto 0;
+  padding-bottom: 4rem;
   flex-wrap: wrap;
 }
 
