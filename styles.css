@@ -85,13 +85,34 @@ em.accent { font-style: italic; font-weight: 300; color: var(--rust); }
   transition: background-color .2s, color .2s, border-color .2s;
   cursor: pointer; border: 1px solid transparent;
 }
-.btn-primary { background: var(--rust); color: var(--deep); }
-.btn-primary:hover { background: var(--cream); }
-.btn-outline { border-color: color-mix(in oklab, var(--cream) 30%, transparent); color: var(--cream); }
-.btn-outline:hover { border-color: var(--rust); color: var(--rust); }
-.btn-dark { background: var(--deep); color: var(--cream); }
-.btn-dark:hover { background: var(--ink); }
-.btn-sm { padding: 0.625rem 1.25rem; }
+.btn-primary {
+  background: #1DA9F5;
+  color: var(--deep);
+}
+
+.btn-primary:hover {
+  background: #52BDF7;
+}
+
+.btn-outline {
+  border-color: #1DA9F5;
+  color: #1DA9F5;
+}
+
+.btn-outline:hover {
+  background: #1DA9F5;
+  border-color: #1DA9F5;
+  color: var(--deep);
+}
+
+.btn-dark {
+  background: var(--deep);
+  color: var(--cream);
+}
+
+.btn-dark:hover {
+  background: var(--ink);
+}
 
 /* Sections */
 section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); }
