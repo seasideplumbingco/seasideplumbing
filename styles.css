@@ -3,7 +3,7 @@
   --deep: oklch(0.19 0.04 250);
   --ink: oklch(0.13 0.03 250);
   --cream: oklch(0.965 0.02 85);
-  --rust: oklch(0.7 0.19 55);
+  --rust: #1DA9F5;
   --border: oklch(0.3 0.03 250);
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
