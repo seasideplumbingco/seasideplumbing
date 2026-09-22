@@ -203,7 +203,7 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 @media (min-width: 768px) { .about-split { grid-template-columns: 5fr 7fr; gap: 4rem; } }
 .about-figure figcaption { margin-top: 1rem; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: color-mix(in oklab, var(--cream) 60%, transparent); }
 .about-figure img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; background: color-mix(in oklab, var(--ink) 60%, transparent); }
-.about-body p { margin-bottom: 1.25rem; font-size: 1.125rem; line-height: 1.7; color: color-mix(in oklab, var(--cream) 85%, transparent); }
+.about-body p { margin-bottom: 4rem; font-size: 1.125rem; line-height: 1.7; color: color-mix(in oklab, var(--cream) 85%, transparent); }
 .about-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; border-top: 1px solid color-mix(in oklab, var(--cream) 15%, transparent); padding-top: 2rem; }
 .about-meta dt { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: color-mix(in oklab, var(--cream) 50%, transparent); }
 .about-meta dd { margin-top: 0.5rem; font-family: var(--font-display); font-size: 1.25rem; color: var(--cream); letter-spacing: -0.02em; }
@@ -586,3 +586,29 @@ fieldset { border: 0; }
 .footer-list dd a:hover { color: var(--rust); }
 .footer-list dd { color: var(--cream); }
 .footer-legal { border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); padding: 1.5rem; text-align: center; font-size: 0.75rem; color: color-mix(in oklab, var(--cream) 50%, transparent); }
+
+
+
+
+
+/* Consistent bottom spacing before footer */
+
+.about-actions {
+  margin-bottom: 4rem;
+}
+
+.svc-groups {
+  padding-bottom: 4rem;
+}
+
+.work-gallery {
+  margin-bottom: 4rem;
+}
+
+.faq-cta {
+  padding-bottom: 4rem;
+}
+
+.contact-grid {
+  padding-bottom: 4rem;
+}
