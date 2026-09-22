@@ -293,7 +293,17 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .faq-q p { font-family: var(--font-display); font-size: 1.5rem; margin-top: 0.75rem; color: var(--cream); letter-spacing: -0.02em; }
 @media (min-width: 768px) { .faq-q p { font-size: 1.875rem; } }
 .faq-a { font-size: 1.125rem; line-height: 1.7; color: color-mix(in oklab, var(--cream) 80%, transparent); }
-.faq-cta { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid color-mix(in oklab, var(--cream) 15%, transparent); display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.faq-cta {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid color-mix(in oklab, var(--cream) 15%, transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
 
 /* Contact */
 .contact-grid { display: grid; gap: 3rem; padding: 6rem 1.5rem; max-width: 1400px; margin: 0 auto; }
