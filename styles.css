@@ -287,12 +287,12 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .faq-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 5rem 1.5rem 7rem;
+  padding: 5rem 1.5rem 0;
 }
 
 @media (min-width: 768px) {
   .faq-inner {
-    padding: 7rem 2.5rem 8rem;
+    padding: 7rem 2.5rem 0;
   }
 }
 .faq-list { list-style: none; border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); }
@@ -303,8 +303,9 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 @media (min-width: 768px) { .faq-q p { font-size: 1.875rem; } }
 .faq-a { font-size: 1.125rem; line-height: 1.7; color: color-mix(in oklab, var(--cream) 80%, transparent); }
 .faq-cta {
-  margin-top: 4rem;
-  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
