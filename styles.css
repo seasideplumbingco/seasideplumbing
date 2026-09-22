@@ -296,8 +296,7 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .faq-cta {
   margin-top: 4rem;
   padding-top: 2.5rem;
-  padding-bottom: 3rem;
-  border-top: 1px solid color-mix(in oklab, var(--cream) 15%, transparent);
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
