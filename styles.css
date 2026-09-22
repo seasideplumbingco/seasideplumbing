@@ -91,7 +91,7 @@ em.accent { font-style: italic; font-weight: 300; color: var(--rust); }
 }
 
 .btn-primary:hover {
-  background: #52BDF7;
+  background: #3A91BD;
 }
 
 .btn-outline {
