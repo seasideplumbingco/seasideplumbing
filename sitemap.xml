@@ -10,15 +10,11 @@
   </url>
 
   <url>
-    <loc>https://seasideplumbingco.com/services/</loc>
-  </url>
-
-  <url>
     <loc>https://seasideplumbingco.com/areas/</loc>
   </url>
 
   <url>
-    <loc>https://seasideplumbingco.com/work/</loc>
+    <loc>https://seasideplumbingco.com/contact/</loc>
   </url>
 
   <url>
@@ -26,7 +22,15 @@
   </url>
 
   <url>
-    <loc>https://seasideplumbingco.com/contact/</loc>
+    <loc>https://seasideplumbingco.com/services/</loc>
+  </url>
+
+  <url>
+    <loc>https://seasideplumbingco.com/work/</loc>
+  </url>
+
+  <url>
+    <loc>https://seasideplumbingco.com/terms-and-conditions/</loc>
   </url>
 
 </urlset>
