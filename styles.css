@@ -214,6 +214,19 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   }
 }
 
+/* Phone button inside blue CTA */
+.cta-band .btn-outline {
+  border-color: var(--deep);
+  color: var(--deep);
+  background: transparent;
+}
+
+.cta-band .btn-outline:hover {
+  background: var(--deep);
+  border-color: var(--deep);
+  color: var(--cream);
+}
+
 /* About page */
 .about-hero h1 { font-size: 3rem; margin-top: 1rem; }
 @media (min-width: 768px) { .about-hero h1 { font-size: 4.5rem; } }
