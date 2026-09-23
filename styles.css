@@ -587,7 +587,20 @@ fieldset { border: 0; }
 .footer-list dd { color: var(--cream); }
 .footer-legal { border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); padding: 1.5rem; text-align: center; font-size: 0.75rem; color: color-mix(in oklab, var(--cream) 50%, transparent); }
 
+footer,
+.footer {
+  width: 100%;
+  background: #020914;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px 24px;
+}
 
 
 
