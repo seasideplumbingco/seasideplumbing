@@ -254,6 +254,18 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   align-items: center;
 }
 
+/* CTA text color */
+.cta-band {
+  color: var(--cream);
+}
+
+.cta-band .eyebrow,
+.cta-band h2,
+.cta-band h2 em,
+.cta-band p {
+  color: var(--cream);
+}
+
 /* About page */
 .about-hero h1 { font-size: 3rem; margin-top: 1rem; }
 @media (min-width: 768px) { .about-hero h1 { font-size: 4.5rem; } }
