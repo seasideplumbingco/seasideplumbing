@@ -188,13 +188,31 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
 .center-photo { max-width: 40rem; margin: 3rem auto 0; overflow: hidden; background: color-mix(in oklab, var(--ink) 60%, transparent); }
 .center-photo img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
 
-/* Final CTA */
-.cta-band { background: var(--rust); color: var(--deep); border-bottom: 0; }
-.cta-grid { display: grid; gap: 2.5rem; padding: 6rem 1.5rem; max-width: 1400px; margin: 0 auto; }
-@media (min-width: 768px) { .cta-grid { grid-template-columns: 8fr 4fr; padding: 8rem 2.5rem; align-items: end; } }
-.cta-grid h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.035em; line-height: 0.92; font-size: clamp(2.5rem, 7vw, 6rem); margin-top: 1.5rem; }
-.cta-grid p { margin-top: 1.5rem; max-width: 32rem; font-size: 1.125rem; color: color-mix(in oklab, var(--deep) 80%, transparent); }
-.cta-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; }
+/* FINAL CTA — FULL WIDTH BLUE */
+.cta-band {
+  width: 100%;
+  background: var(--rust);
+  color: var(--deep);
+  border-bottom: 0;
+}
+
+.cta-grid {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .cta-grid {
+    grid-template-columns: 8fr 4fr;
+    padding: 8rem 2.5rem;
+    align-items: end;
+  }
+}
 
 /* About page */
 .about-hero h1 { font-size: 3rem; margin-top: 1rem; }
@@ -572,26 +590,92 @@ fieldset { border: 0; }
     }
 }
 
-/* Footer */
+/* FOOTER — FULL WIDTH DARK NAVY */
 .site-footer {
   width: 100%;
   background: var(--ink);
   color: color-mix(in oklab, var(--cream) 70%, transparent);
   border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent);
   margin: 0;
+  padding: 0;
 }
-.footer-inner { max-width: 1400px; margin: 0 auto; padding: 4rem 1.5rem; text-align: center; display: grid; gap: 2.5rem; }
-@media (min-width: 768px) { .footer-inner { padding: 4rem 2.5rem; } }
-.footer-inner img { height: 48px; width: auto; margin: 0 auto; }
-@media (min-width: 768px) { .footer-inner img { height: 56px; } }
-.footer-block .eyebrow { color: color-mix(in oklab, var(--cream) 50%, transparent); }
-.footer-list { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem; }
-.footer-list div { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
-.footer-list dt { color: color-mix(in oklab, var(--cream) 50%, transparent); }
-.footer-list dd a { color: var(--cream); }
-.footer-list dd a:hover { color: var(--rust); }
-.footer-list dd { color: var(--cream); }
-.footer-legal { border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); padding: 1.5rem; text-align: center; font-size: 0.75rem; color: color-mix(in oklab, var(--cream) 50%, transparent); }
+
+.footer-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-inner {
+    padding: 4rem 2.5rem;
+  }
+}
+
+.footer-inner img {
+  height: 48px;
+  width: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer-inner img {
+    height: 56px;
+  }
+}
+
+.footer-block {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-block .eyebrow {
+  color: color-mix(in oklab, var(--cream) 50%, transparent);
+}
+
+.footer-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.footer-list div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.footer-list dt {
+  color: color-mix(in oklab, var(--cream) 50%, transparent);
+}
+
+.footer-list dd,
+.footer-list dd a {
+  color: var(--cream);
+}
+
+.footer-list dd a:hover {
+  color: var(--rust);
+}
+
+.footer-legal {
+  width: 100%;
+  border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: color-mix(in oklab, var(--cream) 50%, transparent);
+}
 
 
 /* Consistent bottom spacing before footer */
