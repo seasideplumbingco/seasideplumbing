@@ -227,6 +227,33 @@ section { border-bottom: 1px solid color-mix(in oklab, var(--cream) 10%, transpa
   color: var(--cream);
 }
 
+/* CTA typography cleanup */
+
+.cta-grid h2 {
+  font-size: clamp(2.5rem, 4vw, 4.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  max-width: 700px;
+}
+
+.cta-grid > div:first-child > p:not(.eyebrow) {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+.cta-grid .eyebrow {
+  margin-bottom: 0.8rem;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
 /* About page */
 .about-hero h1 { font-size: 3rem; margin-top: 1rem; }
 @media (min-width: 768px) { .about-hero h1 { font-size: 4.5rem; } }
