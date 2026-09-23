@@ -573,7 +573,13 @@ fieldset { border: 0; }
 }
 
 /* Footer */
-.site-footer { background: var(--ink); color: color-mix(in oklab, var(--cream) 70%, transparent); border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); }
+.site-footer {
+  width: 100%;
+  background: var(--ink);
+  color: color-mix(in oklab, var(--cream) 70%, transparent);
+  border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent);
+  margin: 0;
+}
 .footer-inner { max-width: 1400px; margin: 0 auto; padding: 4rem 1.5rem; text-align: center; display: grid; gap: 2.5rem; }
 @media (min-width: 768px) { .footer-inner { padding: 4rem 2.5rem; } }
 .footer-inner img { height: 48px; width: auto; margin: 0 auto; }
@@ -586,22 +592,6 @@ fieldset { border: 0; }
 .footer-list dd a:hover { color: var(--rust); }
 .footer-list dd { color: var(--cream); }
 .footer-legal { border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); padding: 1.5rem; text-align: center; font-size: 0.75rem; color: color-mix(in oklab, var(--cream) 50%, transparent); }
-
-footer,
-.footer {
-  width: 100%;
-  background: #020914;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 24px 24px;
-}
-
 
 
 /* Consistent bottom spacing before footer */
